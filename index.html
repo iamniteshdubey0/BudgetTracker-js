@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Budget Tracker | js </title>
+</head>
+
+<body>
+    <main>
+        <div class="wraper">
+            <div class="inner-wraper">
+                <h1 class="title">Budget Tracker</h1>
+                <p>Your Daily budget tracker</p>
+                <div class="trans-actions">
+                    <div class="trans-add">
+                        <h3>Add Transactions</h3>
+                        <form class="transaction">
+                            <input type="text" name="source" id="" placeholder="Source" autocomplete="off">
+                            <input type="number" name="amount" id="" placeholder="Amount" autocomplete="off">
+                            <input type="submit" value="Add Transaction">
+                        </form>
+                    </div>
+                    <div class="trans-stats">
+                        <h3>Statistics</h3>
+                        <ul class="stats-ul">
+                            <li class="green">Balance: ₹<span id="balance"></span></li>
+                            <li class="orange">Income: ₹<span id="income"></span></li>
+                            <li class="red">Expense: ₹<span id="expense"></span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="trans-list">
+                    <h3>Recent Transactions</h3>
+                    <div class="trans-list-wraper">
+                        <div class="trans-income">
+                            <h4>Income</h4>
+                            <ul class="income-list">
+                            </ul>
+                        </div>
+                        <div class="trans-expense">
+                            <h4>Expense</h4>
+                            <ul class="expense-list">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
